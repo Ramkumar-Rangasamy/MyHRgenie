@@ -1,0 +1,26 @@
+.hrms-dashboard-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.hrms-layout-dashboard-main-content {
+  flex-grow: 1;
+  width: calc(100% - 300px);
+  transition: width 0.2s;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.hrms-layout-dashboard-main-content .hrms-layout-dashboard-content-area {
+  flex-grow: 1;
+  height: 100%;
+  width: 100%;
+}
+
+/* @media (max-width: 998px) {
+  .hrms-layout-dashboard-main-content {
+    margin-left: 60px;
+  }
+} */

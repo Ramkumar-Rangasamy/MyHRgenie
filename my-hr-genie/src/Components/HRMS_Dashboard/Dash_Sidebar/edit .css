@@ -1,0 +1,118 @@
+.hrms-dash-sidebar-container {
+    width: 300px;
+    height: 100vh;
+    padding:16px 20px;
+    overflow-y: auto;
+    border-right: 1px solid #CCCCCC;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hrms-dash-sbr-logo {
+    margin-bottom: 20px;
+  }
+  
+  .hrms-dash-sbr-logo .logo-img {
+    width: 157px;
+    height:61px;
+  }
+  
+  .hrms-dash-sidebar-menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .hrms-dash-sidebar-menu-item {
+    margin-bottom: 5px;
+  }
+  
+  /* Menu title */
+  .hrms-dash-sidebar-menu-item .hrms-dash-sidebar-menu-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 0;
+    transition: padding 0.3s ease-in-out;
+  }
+  
+ /* When not active (collapsed), remove padding */
+.hrms-dash-sidebar-menu-item:not(.active) .hrms-dash-sidebar-menu-title {
+    padding: 0;
+}
+  
+  .hrms-dash-sidebar-menu-icon-sub-contain{
+    display: flex;
+    gap:10px;
+  }
+
+  .hrms-dash-sidebar-menu-icon-sub-contain,
+  .span-title{
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000CC;
+  }
+  
+  /* Active menu title */
+  .hrms-dash-sidebar-menu-title.active {
+    color: #4a61dd;
+  }
+  
+  /* Menu icon */
+  .hrms-dash-sidebar-menu-icon{
+   
+    font-size: 18px;
+  } 
+  
+  /* Menu arrow */
+  .hrms-dash-sidebar-menu-arrow {
+    font-size: 14px;
+  }
+  
+  /* Submenu list */
+  .submenu-list {
+    list-style: none;
+    padding-left: 30px;
+    
+  }
+  
+  .submenu-item {
+    padding:8px 0px;
+    font-size: 14px;
+    color: #6c757d;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+
+  .submenu-item:first-child {
+    padding: 3px 0px;
+}
+  
+  .submenu-item:hover {
+    color: #4a61dd;
+  }
+  
+  /* Active submenu */
+  .submenu-item.active {
+    color: #4a61dd;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hrms-dash-sidebar-container {
+      width: 200px;
+    }
+  
+    .logo-img {
+      width: 120px;
+    }
+  
+    .menu-title {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .submenu-item {
+      font-size: 12px;
+    }
+  }
+  
